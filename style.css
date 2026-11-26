@@ -793,3 +793,220 @@ body{background:radial-gradient(ellipse at 50% -20%,#30090d 0%,#090909 42%,#0505
   .genre-page-container { padding-left:14px; padding-right:14px; }
   .genre-back-button { width:min(100%,280px); }
 }
+
+
+img,
+video {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .cv-main-header {
+        flex-wrap: wrap;
+    }
+
+    .cv-main-nav {
+        gap: 12px 20px;
+    }
+
+    .search-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .search-container input {
+        width: min(100%, 350px);
+    }
+
+    .details-card {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .hero {
+        height: 520px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 20px 16px;
+    }
+
+    .top-bar,
+    .cv-site-header,
+    .cv-main-header {
+        width: 100%;
+    }
+
+    .navigation,
+    .cv-nav,
+    .cv-main-nav {
+        max-width: 100%;
+    }
+
+    .movie-detail-page,
+    .details-page,
+    .cv-watch-page {
+        width: 100%;
+    }
+
+    .watch-section {
+        padding: 22px;
+    }
+
+    .cv-player-panel {
+        min-width: 0;
+    }
+
+    .cv-player-screen,
+    .cineverse-video-frame {
+        width: 100%;
+    }
+
+    .about-content,
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .container {
+        padding: 32px 14px;
+    }
+
+    .movie-container {
+        gap: 18px;
+    }
+
+    .movie-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .feature-box,
+    .about-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 12px;
+        margin: 22px auto 32px;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .search input[type="text"] {
+        width: min(100%, 300px);
+    }
+
+    .details-page {
+        padding: 30px 14px;
+    }
+
+    .details-card {
+        padding: 18px;
+    }
+
+    .detail-hero {
+        padding: 18px;
+    }
+
+    .detail-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-section {
+        padding: 20px;
+    }
+
+    .watch-section {
+        padding: 16px;
+    }
+
+    .cv-watch-page {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .cv-player-caption {
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .navigation a,
+    .cv-nav a,
+    .cv-main-nav a {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .cv-main-brand span {
+        font-size: 29px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .about-hero {
+        padding: 48px 15px;
+    }
+
+    .about-hero h2 {
+        font-size: 28px;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .detail-actions .btn,
+    .detail-actions .watch-now-link {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .back-to-top {
+        right: 14px;
+        bottom: 14px;
+    }
+}
