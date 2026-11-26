@@ -1,0 +1,15 @@
+HOW TO ADD MOVIES TO CINEVERSE
+
+1. Open the Movie website/videos folder.
+2. Copy your authorized .mp4 file into that folder.
+3. Rename it to match the movie HTML page. For example, frozen.html uses videos/frozen.mp4.
+4. Open that movie page in a browser. Scroll to the Watch section or click Watch Now.
+5. Press Play in the built-in HTML5 video player.
+
+The website has been prepared with a video player on every individual movie detail page.
+To add a different movie later, create its details page, copy the video player section, and change the MP4 source path.
+
+IMPORTANT: The MP4 files must be uploaded to the same hosting service as the website for public streaming.
+Do not distribute copyrighted films unless you own them or have permission.
+
+Technologies: HTML, CSS and Bootstrap. No JavaScript is used for the video player.

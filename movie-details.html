@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Movie Details</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.details-catalogue-hero {
+  padding:54px 20px 34px;
+  text-align:center;
+  background:linear-gradient(135deg,#260000,#090909 72%);
+  border-bottom:1px solid #4a1111
+}
+
+.details-catalogue-hero h1{
+  color:#ff1728;
+  font-size:clamp(30px,4vw,44px);
+  margin:0 0 12px
+}
+
+.details-catalogue-hero p{
+  color:#ddd;
+  margin:0;
+  font-size:16px
+}
+
+.details-catalogue-wrap{
+  max-width:1240px;
+  margin:auto;
+  padding:38px 22px 60px
+}
+
+.details-catalogue-count{
+  color:#aaa;
+  text-align:center;
+  margin:0 0 28px
+}
+
+.details-catalogue-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:24px;
+  align-items:stretch
+}
+
+.details-catalogue-card{
+  width:auto;
+  min-width:0;
+  margin:0;
+  text-align:left
+}
+
+.details-catalogue-card .movie-info{
+  gap:3px
+}
+
+.details-catalogue-card h3{
+  margin:8px 0;
+  color:#ff2636
+}
+
+.details-catalogue-card p{
+  flex-grow:0;
+  margin:5px 0
+}
+
+.details-catalogue-card .btn{
+  align-self:flex-start;
+  margin:12px 0 4px
+}
+
+@media(max-width:600px){
+  .details-catalogue-wrap{
+    padding:25px 14px
+  }
+  .details-catalogue-grid{
+    grid-template-columns:repeat(auto-fit,minmax(165px,1fr));
+    gap:14px
+  }
+  .details-catalogue-card img{
+    height:230px
+    }
+    }
+</style>
+</head>
+<body>
+  <header class="cv-main-header">
+    <a class="cv-main-brand" href="homepage.html"><span>CineVerse</span><small>Your ultimate destination for movie enthusiasts!</small></a>
+    <nav class="cv-main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore Movies</a>
+      <a href="genres.html">Genres</a>
+      <a href="movie-details.html">Movie Details</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+  <main>
+    <section class="details-catalogue-hero">
+      <h1>All Movie Details</h1>
+      <p>Browse the complete CineVerse collection and select a movie to view its full details.</p>
+    </section>
+    <section class="details-catalogue-wrap">
+      <div class="details-catalogue-grid">
+        <article class="movie-card details-catalogue-card">
+          <img src="interstellar.jpg" alt="Interstellar">
+          <div class="movie-info">
+            <h3>Interstellar</h3>
+            <p>A journey through space to save humanity.</p>
+              <p><b>Genre:</b> Sci-Fi, Adventure, Drama</p>
+              <p><b>Year:</b> 2014</p><p><b>Rating:</b> 8.7/10</p>
+              <a href="interstellar.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="annabelle.jpg" alt="Annabelle">
+            <div class="movie-info">
+              <h3>Annabelle</h3>
+              <p>A terrifying story about a haunted doll.</p>
+              <p><b>Genre:</b> Horror, Mystery, Thriller</p>
+              <p><b>Year:</b> 2014</p><p><b>Rating:</b> 5.5/10</p>
+              <a href="annabelle.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="titanic.jpg" alt="Titanic">
+            <div class="movie-info">
+              <h3>Titanic</h3>
+              <p>A tragic love story set against the backdrop of the RMS Titanic.</p>
+              <p><b>Genre:</b> Romance, Drama, History</p>
+              <p><b>Year:</b> 1997</p><p><b>Rating:</b> 7.8/10</p>
+              <a href="titanic.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="spider man brand new day.jpg" alt="Spider-Man: Brand New Day">
+            <div class="movie-info">
+              <h3>Spider-Man: Brand New Day</h3>
+              <p>A young man gains spider-like abilities and becomes a superhero.</p>
+              <p><b>Genre:</b> Action, Adventure, Sci-Fi</p>
+              <p><b>Year:</b> 2002</p><p><b>Rating:</b> 7.3/10</p>
+              <a href="spider man brand new day.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="legally blonde.jpg" alt="Legally Blonde">
+            <div class="movie-info">
+              <h3>Legally Blonde</h3>
+              <p>A sorority girl enrolls in Harvard Law School to win back her ex-boyfriend.</p>
+              <p><b>Genre:</b> Comedy, Romance</p>
+              <p><b>Year:</b> 2001</p><p><b>Rating:</b> 6.3/10</p>
+              <a href="legally blonde.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="harry potter.jpg" alt="Harry Potter">
+            <div class="movie-info">
+              <h3>Harry Potter</h3>
+              <p>A young wizard discovers his magical heritage and attends a school of witchcraft and wizardry.</p>
+              <p><b>Genre:</b> Fantasy, Adventure, Family</p>
+              <p><b>Year:</b> 2001</p><p><b>Rating:</b> 7.6/10</p>
+              <a href="harry potter.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="avatar.jpg" alt="Avatar">
+            <div class="movie-info">
+              <h3>Avatar</h3>
+              <p>A marine on an alien world becomes torn between his own race and the native people.</p>
+              <p><b>Genre:</b> Action, Adventure, Fantasy</p>
+              <p><b>Year:</b> 2009</p><p><b>Rating:</b> 7.8/10</p>
+              <a href="avatar.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="avatar fire and ash.jpeg" alt="Avatar: Fire and Ash">
+            <div class="movie-info">
+              <h3>Avatar: Fire and Ash</h3>
+              <p>A new chapter in the Avatar universe explores the aftermath of the original film.</p>
+              <p><b>Genre:</b> Action, Adventure, Fantasy</p>
+              <p><b>Year:</b> 2022</p><p><b>Rating:</b> 6.5/10</p>
+              <a href="avatar fire and ash.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="english vinglish.jpg" alt="English Vinglish">
+            <div class="movie-info">
+              <h3>English Vinglish</h3>
+              <p>A woman enrolls in an English-speaking course to gain self-respect and confidence.</p>
+              <p><b>Genre:</b> Drama, Comedy</p>
+              <p><b>Year:</b> 2012</p><p><b>Rating:</b> 7.8/10</p>
+              <a href="english vinglish.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="lion king.jpg" alt="The Lion King">
+            <div class="movie-info">
+              <h3>The Lion King</h3>
+              <p>A young lion prince is cast out of his pride and must find his way back.</p>
+              <p><b>Genre:</b> Animation, Adventure, Drama</p>
+              <p><b>Year:</b> 1994</p><p><b>Rating:</b> 8.5/10</p>
+              <a href="lion king.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="ironman.jpg" alt="Iron Man">
+            <div class="movie-info">
+              <h3>Iron Man</h3>
+              <p>A billionaire industrialist and genius inventor builds a high-tech suit of armor to become a superhero.</p>
+              <p><b>Genre:</b> Action, Adventure, Sci-Fi</p>
+              <p><b>Year:</b> 2008</p><p><b>Rating:</b> 7.9/10</p>
+              <a href="ironman.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="frozen.jpg" alt="Frozen">
+            <div class="movie-info">
+              <h3>Frozen</h3>
+              <p>A young girl with a powerful ice ability embarks on a journey to save her kingdom.</p>
+              <p><b>Genre:</b> Animation, Adventure, Comedy</p>
+              <p><b>Year:</b> 2013</p><p><b>Rating:</b> 7.5/10</p>
+              <a href="frozen.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="dark knight.jpg" alt="The Dark Knight">
+            <div class="movie-info">
+              <h3>The Dark Knight</h3>
+              <p>Batman faces the Joker, a criminal mastermind who wants to plunge Gotham City into chaos.</p>
+              <p><b>Genre:</b> Action, Crime, Drama</p>
+              <p><b>Year:</b> 2008</p><p><b>Rating:</b> 9.0/10</p>
+              <a href="dark knight.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="jurassic park.png" alt="Jurassic Park">
+            <div class="movie-info">
+              <h3>Jurassic Park</h3>
+              <p>A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of dinosaur eggs from a rival corporation.</p>
+              <p><b>Genre:</b> Action, Adventure, Sci-Fi</p>
+              <p><b>Year:</b> 1993</p><p><b>Rating:</b> 8.1/10</p>
+              <a href="jurassic park.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="notebook.jpg" alt="The Notebook">
+            <div class="movie-info">
+              <h3>The Notebook</h3>
+              <p>A young couple falls in love and faces challenges as they navigate their relationship.</p>
+              <p><b>Genre:</b> Drama, Romance</p>
+              <p><b>Year:</b> 2004</p><p><b>Rating:</b> 7.9/10</p>
+              <a href="notebook.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="conjuring.jpg" alt="The Conjuring">
+            <div class="movie-info">
+              <h3>The Conjuring</h3>
+              <p>A paranormal investigator and his wife help a family terrorized by a dark presence in their farmhouse.</p>
+              <p><b>Genre:</b> Horror, Thriller</p>
+              <p><b>Year:</b> 2013</p><p><b>Rating:</b> 7.5/10</p>
+              <a href="conjuring.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="avengers endgame.jpg" alt="Avengers Endgame">
+            <div class="movie-info">
+              <h3>Avengers Endgame</h3>
+              <p>After the devastating events of Infinity War, the Avengers must band together to undo Thanos's actions and restore order to the universe.</p>
+              <p><b>Genre:</b> Action, Adventure, Drama</p>
+              <p><b>Year:</b> 2019</p><p><b>Rating:</b> 8.4/10</p>
+              <a href="avengers endgame.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="black panther.jpg" alt="Black Panther">
+            <div class="movie-info">
+              <h3>Black Panther</h3>
+              <p>A young man returns to his homeland to take his rightful place as king and protect his people from external threats.</p>
+              <p><b>Genre:</b> Action, Adventure, Sci-Fi</p>
+              <p><b>Year:</b> 2018</p><p><b>Rating:</b> 7.3/10</p>
+              <a href="black panther.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="furious-7.jpg" alt="Furious 7">
+            <div class="movie-info">
+              <h3>Furious 7</h3>
+              <p>Dom Toretto and his family are targeted by the vengeful Cipher, who seeks to destroy the family and their network of allies.</p>
+              <p><b>Genre:</b> Action, Crime, Thriller</p>
+              <p><b>Year:</b> 2015</p><p><b>Rating:</b> 7.1/10</p>
+              <a href="furious-7.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="johnwick.jpg" alt="John Wick">
+            <div class="movie-info">
+              <h3>John Wick</h3>
+              <p>A former assassin seeks revenge against those who killed his dog and stole his car.</p>
+              <p><b>Genre:</b> Action, Crime, Thriller</p>
+              <p><b>Year:</b> 2014</p><p><b>Rating:</b> 7.2/10</p>
+              <a href="johnwick.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="nun.jpg" alt="The Nun">
+            <div class="movie-info">
+              <h3>The Nun</h3>
+              <p>A young nun takes her vows and becomes a sister, only to discover a dark secret that threatens the convent.</p>
+              <p><b>Genre:</b> Horror, Thriller</p>
+              <p><b>Year:</b> 2018</p><p><b>Rating:</b> 5.3/10</p>
+              <a href="nun.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="it.jpg" alt="IT">
+            <div class="movie-info">
+              <h3>IT</h3>
+              <p>A group of bullied children band together to face their worst fears, which take the form of a shape-shifting clown named Pennywise.</p>
+              <p><b>Genre:</b> Horror, Thriller</p>
+              <p><b>Year:</b> 2017</p><p><b>Rating:</b> 7.4/10</p>
+              <a href="it.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="smile.jpg" alt="Smile">
+            <div class="movie-info">
+              <h3>Smile</h3>
+              <p>A horror film about a nurse who becomes trapped in a mysterious facility and must face her deepest fears.</p>
+              <p><b>Genre:</b> Horror, Thriller</p>
+              <p><b>Year:</b> 2022</p><p><b>Rating:</b> 6.1/10</p>
+              <a href="smile.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="scream.jpg" alt="Scream">
+            <div class="movie-info">
+              <h3>Scream</h3>
+              <p>A horror film about a group of teenagers who are targeted by a mysterious killer while attending a film festival.</p>
+              <p><b>Genre:</b> Horror, Thriller</p>
+              <p><b>Year:</b> 2022</p><p><b>Rating:</b> 6.0/10</p>
+              <a href="scream.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="a quiet place.jpg" alt="A Quiet Place">
+            <div class="movie-info">
+              <h3>A Quiet Place</h3>
+              <p>A family struggles to survive in a world where silence is the key to staying alive.</p>
+              <p><b>Genre:</b> Horror, Drama</p>
+              <p><b>Year:</b> 2018</p><p><b>Rating:</b> 7.5/10</p>
+              <a href="a quiet place.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="lalaland.jpg" alt="La La Land">
+            <div class="movie-info">
+              <h3>La La Land</h3>
+              <p>A musical about two people who fall in love in Los Angeles and pursue their dreams.</p>
+              <p><b>Genre:</b> Musical, Romance</p>
+              <p><b>Year:</b> 2016</p><p><b>Rating:</b> 8.0/10</p>
+              <a href="lalaland.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="pride-and-prejudice.jpg" alt="Pride and Prejudice">
+            <div class="movie-info">
+              <h3>Pride and Prejudice</h3>
+              <p>A romantic drama about the complex relationship between Elizabeth Bennet and Mr. Darcy.</p>
+              <p><b>Genre:</b> Romance, Drama</p>
+              <p><b>Year:</b> 2005</p><p><b>Rating:</b> 7.8/10</p>
+              <a href="pride-and-prejudice.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="me before you.jpg" alt="Me Before You">
+            <div class="movie-info">
+              <h3>Me Before You</h3>
+              <p>A romantic drama about a young woman who moves to a small town and falls in love with a man with a disability.</p>
+              <p><b>Genre:</b> Romance, Drama</p>
+              <p><b>Year:</b> 2016</p><p><b>Rating:</b> 7.3/10</p>
+              <a href="me before you.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="10 things i hate about you.jpg" alt="10 Things I Hate About You">
+            <div class="movie-info">
+              <h3>10 Things I Hate About You</h3>
+              <p>A romantic comedy about a teenager who falls in love with a new student at her school.</p>
+              <p><b>Genre:</b> Romance, Comedy</p>
+              <p><b>Year:</b> 1999</p><p><b>Rating:</b> 7.0/10</p>
+              <a href="10 things i hate about you.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="about time.jpg" alt="About Time">
+            <div class="movie-info">
+              <h3>About Time</h3>
+              <p>A romantic drama about a man who discovers he can travel back in time.</p>
+              <p><b>Genre:</b> Romance, Drama</p>
+              <p><b>Year:</b> 2013</p><p><b>Rating:</b> 7.8/10</p>
+              <a href="about time.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="inception.jpg" alt="Inception">
+            <div class="movie-info">
+              <h3>Inception</h3>
+              <p>A science fiction thriller about a thief who can enter people's dreams.</p>
+              <p><b>Genre:</b> Science Fiction, Thriller</p>
+              <p><b>Year:</b> 2010</p><p><b>Rating:</b> 8.8/10</p>
+              <a href="inception.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="martian.jpg" alt="The Martian">
+            <div class="movie-info">
+              <h3>The Martian</h3>
+              <p>A science fiction film about an astronaut who gets stranded on Mars and must find a way to survive.</p>
+              <p><b>Genre:</b> Science Fiction, Drama</p>
+              <p><b>Year:</b> 2015</p><p><b>Rating:</b> 8.0/10</p>
+              <a href="martian.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="matrix.jpg" alt="The Matrix">
+            <div class="movie-info">
+              <h3>The Matrix</h3>
+              <p>A science fiction film about a computer programmer who discovers the truth about his reality.</p>
+              <p><b>Genre:</b> Science Fiction, Action</p>
+              <p><b>Year:</b> 1999</p><p><b>Rating:</b> 8.7/10</p>
+              <a href="matrix.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="dune.jpg" alt="Dune">
+            <div class="movie-info">
+              <h3>Dune</h3>
+              <p>A science fiction film about a young man who becomes the heir to a feudal estate on a desert planet.</p>
+              <p><b>Genre:</b> Science Fiction, Adventure</p>
+              <p><b>Year:</b> 2021</p><p><b>Rating:</b> 8.0/10</p>
+              <a href="dune.html" class="btn">View Details</a>
+            </div>
+          </article>
+          <article class="movie-card details-catalogue-card">
+            <img src="guradians of the galaxy.jpg" alt="Guardians of the Galaxy">
+            <div class="movie-info">
+              <h3>Guardians of the Galaxy</h3>
+              <p>A science fiction film about a group of intergalactic criminals who are forced to work together to stop a powerful villain.</p>
+              <p><b>Genre:</b> Science Fiction, Action</p>
+              <p><b>Year:</b> 2014</p><p><b>Rating:</b> 8.0/10</p>
+              <a href="guradians of the galaxy.html" class="btn">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2026 CineVerse. All rights reserved.</p></footer>
+      <a href="#top" class="back-to-top">↑</a>
+</body>
+</html>

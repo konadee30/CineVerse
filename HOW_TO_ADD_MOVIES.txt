@@ -1,0 +1,13 @@
+CINEVERSE - ADDING A MOVIE VIDEO
+
+1. Open the Movie website/videos folder.
+2. Copy your authorized MP4 video into that folder.
+3. Use the exact filename shown in the matching watch-*.html page.
+   Example: videos/frozen.mp4
+4. If your video has a different filename, open its watch page and edit the <source src="..."> value.
+5. Open the movie details page and click Watch Now. It opens a separate watch page.
+6. For public viewing, upload the website AND video files to a web host that supports video hosting.
+
+Each movie has its own watch page named watch-MOVIE-SLUG.html.
+No JavaScript is used; the player is the built-in HTML5 <video controls> element.
+Only upload movies you own or are licensed/authorized to distribute.
