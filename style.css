@@ -1010,3 +1010,60 @@ video {
         bottom: 14px;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    .top-bar {
+        padding: 18px 14px;
+        gap: 12px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        width: 100%;
+    }
+
+    .navigation a {
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .search-container {
+        width: calc(100% - 28px);
+        align-items: stretch;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .back-to-top {
+        position: static;
+        margin: 20px auto;
+    }
+}
